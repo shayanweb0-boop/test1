@@ -1,0 +1,562 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.rectangle-container {
+    width: 95%;
+    max-width: 800px;
+    max-height: 90vh;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    overflow-y: auto;
+}
+
+.text-content {
+    color: #333;
+}
+
+.text-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.rule {
+    margin-bottom: 25px;
+    padding: 15px;
+    background: rgba(0, 123, 255, 0.05);
+    border-radius: 10px;
+    border-right: 4px solid #007bff;
+}
+
+.rule-number {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-left: 10px;
+}
+
+.rule p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 8px;
+}
+
+.rule strong {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* اسکرول بار زیبا */
+.rectangle-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.rectangle-container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.rectangle-container::-webkit-scrollbar-thumb {
+    background: #007bff;
+    border-radius: 10px;
+}
+
+.rectangle-container::-webkit-scrollbar-thumb:hover {
+    background: #0056b3;
+}
+
+/* برای موبایل */
+@media (max-width: 768px) {
+    .rectangle-container {
+        padding: 20px;
+        border-radius: 15px;
+        max-height: 85vh;
+    }
+    
+    .text-content h1 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    
+    .rule {
+        margin-bottom: 20px;
+        padding: 12px;
+    }
+    
+    .rule-number {
+        font-size: 1.2rem;
+    }
+    
+    .rule p {
+        font-size: 1rem;
+    }
+}
+
+/* برای موبایل‌های کوچک */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .rectangle-container {
+        padding: 15px;
+        border-radius: 12px;
+        max-height: 80vh;
+    }
+    
+    .text-content h1 {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+    }
+    
+    .rule {
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+    
+    .rule-number {
+        font-size: 1.1rem;
+    }
+    
+    .rule p {
+        font-size: 0.95rem;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.rectangle-container {
+    width: 95%;
+    max-width: 900px;
+    max-height: 90vh;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    overflow-y: auto;
+}
+
+.text-content {
+    color: #333;
+}
+
+.text-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.section {
+    background: rgba(0, 123, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border-right: 4px solid #007bff;
+}
+
+.section h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.section p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.rule {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    border-right: 4px solid #007bff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.rule-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-left: 15px;
+    background: rgba(0, 123, 255, 0.1);
+    padding: 8px 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.rule-content h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 8px;
+}
+
+.rule-content ul {
+    list-style-type: none;
+    padding-right: 0;
+}
+
+.rule-content li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ecf0f1;
+    position: relative;
+    padding-right: 20px;
+}
+
+.rule-content li:before {
+    content: "•";
+    color: #007bff;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+}
+
+.note {
+    background: rgba(255, 193, 7, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    border-right: 3px solid #ffc107;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #856404;
+}
+
+.sub-rule {
+    background: rgba(108, 117, 125, 0.05);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    border-right: 3px solid #6c757d;
+}
+
+.sub-rule h4 {
+    color: #495057;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.sub-rule p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.important-note {
+    background: rgba(220, 53, 69, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    border-right: 3px solid #dc3545;
+}
+
+.important-note p {
+    margin-bottom: 10px;
+    color: #721c24;
+    font-weight: 500;
+}
+
+.punishment {
+    background: rgba(253, 126, 20, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    border-right: 3px solid #fd7e14;
+}
+
+.punishment h4 {
+    color: #e65c00;
+    margin-bottom: 10px;
+}
+
+.punishment ul {
+    list-style-type: none;
+    padding-right: 0;
+}
+
+.punishment li {
+    padding: 5px 0;
+    color: #993d00;
+}
+
+/* اسکرول بار زیبا */
+.rectangle-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.rectangle-container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.rectangle-container::-webkit-scrollbar-thumb {
+    background: #007bff;
+    border-radius: 10px;
+}
+
+.rectangle-container::-webkit-scrollbar-thumb:hover {
+    background: #0056b3;
+}
+
+/* برای موبایل */
+@media (max-width: 768px) {
+    .rectangle-container {
+        padding: 20px;
+        border-radius: 15px;
+        max-height: 85vh;
+    }
+    
+    .text-content h1 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    
+    .rule {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+    
+    .rule-number {
+        font-size: 1.3rem;
+        padding: 6px 12px;
+    }
+    
+    .rule-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .section {
+        padding: 15px;
+    }
+    
+    .section h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* برای موبایل‌های کوچک */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .rectangle-container {
+        padding: 15px;
+        border-radius: 12px;
+        max-height: 80vh;
+    }
+    
+    .text-content h1 {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+    }
+    
+    .rule {
+        margin-bottom: 15px;
+        padding: 12px;
+    }
+    
+    .rule-number {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    
+    .rule-content h3 {
+        font-size: 1.1rem;
+    }
+    
+    .section {
+        padding: 12px;
+    }
+    
+    .section h2 {
+        font-size: 1.2rem;
+    }
+    
+    .sub-rule, .important-note, .punishment {
+        padding: 12px;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.rgb-text {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: rgbAnimation 3s infinite;
+}
+
+@keyframes rgbAnimation {
+    0% { color: #ff0000; }
+    25% { color: #00ff00; }
+    50% { color: #0000ff; }
+    75% { color: #ffff00; }
+    100% { color: #ff00ff; }
+}
+
+.buttons-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.button-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 100%;
+}
+
+.action-btn {
+    background: linear-gradient(145deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    padding: 18px 10px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+}
+
+.action-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+    background: linear-gradient(145deg, #0056b3, #004494);
+    color: white;
+}
+
+.action-btn:active {
+    transform: translateY(-1px);
+}
+
+/* برای تبلت */
+@media (max-width: 768px) {
+    .rgb-text {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+    
+    .button-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    
+    .action-btn {
+        padding: 16px 8px;
+        font-size: 15px;
+        min-height: 55px;
+    }
+}
+
+/* برای موبایل */
+@media (max-width: 480px) {
+    .rgb-text {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+    
+    .buttons-grid {
+        gap: 15px;
+    }
+    
+    .button-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .action-btn {
+        padding: 14px 6px;
+        font-size: 14px;
+        min-height: 50px;
+        border-radius: 12px;
+    }
+    
+    body {
+        padding: 15px;
+    }
+}
+
+/* برای موبایل‌های خیلی کوچک */
+@media (max-width: 360px) {
+    .button-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .action-btn {
+        min-height: 45px;
+    }
+}
+

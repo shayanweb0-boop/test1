@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShayanWeb</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 20px;
+        }
+        header, footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <!-- عکس پروفایل بالای عنوان -->
+            <img src="images/html-css.webp" alt="Shayan" class="profile-img">
+        <h1>درباره من</h1>
+    </header>
+
+    <main>
+        <h2>سلام! من <strong>شایان مقصودی</strong> هستم</h2>
+        <p>من <strong>کلاس یازدهم</strong> هستم و رشتم <strong>شبکه و نرم‌افزاره</p>
+        <p>تازه حدود یک ماهه که دارم <strong>HTML و CSS</strong> یاد می‌گیرم و خیلی دوست دارم که سایت خودم رو بسازم و چیزای جدید یاد بگیرم!</p>
+    
+        <h3>چند نکته درباره من:</h3>
+        <ul>
+            <li><strong>نام کامل:</strong> شایان مقصودی</li>
+            <li><strong>محل زندگی:</strong> کرج</li>
+            <li><strong>کلاس:</strong> یازدهم</li>
+            <li><strong>رشته تحصیلی:</strong> شبکه و نرم‌افزار</li>
+            <li><strong>تجربه یادگیری:</strong> تازه شروع کردم، حدود یک ماه HTML و CSS کار میکنم</li>
+        </ul>
+
+        <section class="slider">
+            <div class="slides">
+                <img src="images/html-css.webp" alt="پروژه ۱">
+                <img src="project2.jpg" alt="پروژه ۲">
+                <img src="project3.jpg" alt="پروژه ۳">
+            </div>
+        </section>
+
+
+        <div class="buttons">
+            <button onclick="alert('شماره تلفن: 09123456789')">شماره تلفن</button>
+        </div>
+
+        <div class="buttons">
+            <button onclick="window.location.href='projects.html'">مشاهده پروژه‌ها</button>
+        </div>
+        <a href="Rules.html" class="floating-button">
+            <span>ورود به صفحه جدید</span>
+        </a>
+    </main>
+    
+    <footer>
+        &copy; 2025 شایان مقصودی
+    </footer>
+    
+    
+    
+</body>
+</html>
